@@ -1,0 +1,229 @@
+#product {
+    margin-top: 7px;
+}
+
+div#product section {
+    width: 70%;
+    height: 350px;
+    background-color: aqua;
+    margin: auto;
+    margin-top: 5%;
+}
+
+div#product div.groceries div.allsub {
+    padding: 3%;
+    text-align: center;
+}
+
+div#product div.groceries div.allsub img,
+div.fruits div.all img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+div#product div.vege img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+div#product div.groceries div.allsub {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    grid-gap: 75px;
+    text-align: center;
+}
+
+div#product div.groceries div.allsub div.sub {
+    position: relative;
+    height: 90%;
+}
+
+figcaption.text {
+    font-weight: 600;
+    font-size: 2.5em;
+    color: rgb(8, 6, 24);
+    height: 20%;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+figcaption.text a {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 32px;
+}
+
+.fortwo {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.forthree {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div#product div.fruits div.all,
+div#product div.vegetables div.veggies {
+    text-align: center;
+    padding: 3%;
+    display: grid;
+    grid-gap: 15px;
+}
+
+div#product div.groceries h3,
+div#product div.fruits h3,
+div#product div.vegetables h3 {
+    text-transform: capitalize;
+    font-size: 30px;
+    text-align: center;
+}
+
+div.nepali {
+    padding: 2%;
+    display: inline-flex;
+}
+
+div.nepali div {
+    text-align: center;
+}
+
+div.nepali div p {
+    font-size: 25px;
+    padding: 1% 3%;
+    letter-spacing: 2px;
+}
+
+div.nepali div p span {
+    color: rgb(250, 101, 1);
+    font-weight: 700;
+    font-style: italic;
+}
+
+div#product div.grid div.items div.cart section {
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    color: #f00001;
+    font-weight: 600;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+}
+
+div#product div.grid div.items div.cart section span {
+    border: 1px solid black;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+    opacity: 0.5;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+@media only screen and (max-width:1000px) {
+    .forthree {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    div#product div.vege img {
+        width: 80%;
+    }
+    div.nepali img {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width:876px) {
+    div#product div.groceries div.allsub {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 75px;
+        text-align: center;
+    }
+    div#product div.groceries div.allsub div.sub span {
+        font-size: 2.3em;
+    }
+    div#product div.groceries div.allsub {
+        grid-gap: 35px;
+    }
+    figcaption.text a {
+        font-size: 27px;
+    }
+    div#product div.vege img {
+        width: 90%;
+    }
+    div.nepali img {
+        width: 200px;
+    }
+    div.nepali div p span {
+        font-weight: 600;
+    }
+    div.nepali div p {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    div#product div.groceries div.allsub div.sub span {
+        font-size: 2em;
+    }
+    figcaption.text a {
+        font-size: 19px;
+    }
+    div#product div.vege img {
+        width: 100%;
+    }
+    div.nepali img {
+        width: 150px;
+    }
+    div.nepali div p span {
+        font-weight: 500;
+    }
+    div.nepali div p {
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+}
+
+@media only screen and (max-width:528px) {
+    div#product div.groceries div.allsub div.sub span {
+        font-size: 1.7em;
+    }
+    div#product div.groceries div.allsub {
+        grid-gap: 12px;
+    }
+    figcaption.text {
+        height: 22%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    div#product div.groceries div.allsub div.sub span {
+        font-size: 1.4em;
+    }
+    figcaption.text a {
+        font-size: 13px;
+    }
+    div.nepali img {
+        width: 130px;
+    }
+    div.nepali div p {
+        font-size: 13px;
+        letter-spacing: 0px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    div.nepali img {
+        width: 100px;
+    }
+    div.nepali div p {
+        font-size: 12px;
+    }
+}

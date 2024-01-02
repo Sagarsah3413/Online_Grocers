@@ -1,0 +1,233 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'exo', sans-serif;
+}
+
+body {
+    background-color: rgb(252,252,252);
+}
+
+h3.kind {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(250, 101, 1);
+    text-transform: capitalize;
+    padding: 1%;
+    letter-spacing: 2px;
+}
+
+div#info {
+    margin: auto;
+    display: flex;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+}
+
+section#body {
+    margin-left: 30%;
+}
+
+section form#formm label {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+section form#formm input {
+    padding: 1%;
+    width: 50%;
+    color: rgb(0 39 121);
+    border-radius: 0px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    font-size: 24px;
+}
+
+section form#formm select option {
+    background-color: rgb(185, 210, 224);
+}
+
+section form#formm select option {
+    /* width: 100%; */
+    padding: 0;
+}
+
+.escape {
+    display: flex;
+    margin-left: 0px;
+}
+
+section form#formm p {
+    padding: 1% 5%;
+}
+
+section form#formm p span#Username {
+    margin-left: 116px;
+}
+
+section form#formm div.order {
+    text-align: left;
+    padding-left: 16%;
+}
+
+.click {
+    cursor: pointer;
+}
+
+body span.under {
+    color: #e2294d;
+    display: block;
+    padding-top: 8px;
+    /* margin-left: 0px; */
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.order {
+    text-align: center;
+    overflow: auto;
+}
+
+div.order div {
+    display: inline-block;
+}
+
+div.order button,
+div.order div {
+    margin: 2%;
+    padding: 1%;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(250, 101, 1);
+    border-style: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+div.order button:hover,
+div.order div#use:hover {
+    transform: scale(1.1);
+}
+
+*:focus {
+    outline: none;
+}
+
+h4.tq {
+    text-align: center;
+    font-size: 70px;
+    margin: 5%;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 50px;
+    margin: 1%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+::placeholder {
+    font-size: 0.7em;
+    padding-left: 5%;
+    color: rgb(43, 59, 65);
+    opacity: 0.8;
+}
+
+
+/* here */
+
+div.order div#use {
+    background-color: #e2294d;
+}
+
+div.order.lock {
+    padding: 0px 10px;
+    font-size: 26px;
+}
+
+.change {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section form#formm div.order#message {
+    text-align: left;
+    padding-left: 5%;
+    width: 54%;
+}
+
+@media only screen and (max-width:1200px) {
+    section#body {
+        width: 50%;
+        margin: 0px;
+        margin: 0px auto;
+    }
+    section form#formm input {
+        width: 90%;
+    }
+    h4.tq {
+        font-size: 56px;
+    }
+    h5 {
+        font-size: 50px;
+    }
+    section form#formm div.order,
+    section form#formm div.order#message {
+        text-align: center;
+        padding: 1% 5%;
+    }
+    section form#formm div.order#message {
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    section#body {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    h3.kind {
+        font-size: 32px;
+    }
+    section form#formm label {
+        font-size: 24px;
+    }
+    h4.tq {
+        font-size: 40px;
+    }
+    h5 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    section#body {
+        width: 95%;
+    }
+    h4.tq {
+        font-size: 28px;
+    }
+    h5 {
+        font-size: 21px;
+    }
+    /* here */
+    div.order.lock {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    h4.tq {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+}

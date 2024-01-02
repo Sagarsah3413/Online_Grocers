@@ -1,0 +1,594 @@
+* a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    font-family: 'Exo', sans-serif;
+}
+
+* h1,
+* h2,
+* h3,
+* h4,
+* h5,
+* h6 {
+    font-weight: 400;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgb(40, 116, 240);
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+    padding-bottom: 22px;
+}
+
+aside {
+    margin: 1px 0px;
+}
+
+.relative {
+    position: relative;
+}
+
+header div.fill span#open,
+header div.cart span#carticon {
+    cursor: pointer;
+}
+
+header div.cart span#carticon {
+    position: relative;
+}
+
+header div.cart span#carticon span#index {
+    background-color: rgb(145, 192, 211);
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20%;
+    color: rgb(255, 0, 149);
+    padding: 2px;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header div.cart span#carticon {
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(151, 208, 235);
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+header div.cart span#carticon img {
+    width: 90%;
+    height: 90%;
+}
+
+header div.cart span#carticon:hover {
+    background-color: aliceblue;
+}
+
+header div.fill nav#menu {
+    left: 0px;
+}
+
+header div.cart nav#cartmenu {
+    right: 0px;
+}
+
+header div.fill nav#menu,
+header div.cart nav#cartmenu {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.411);
+    overflow: hidden;
+    display: block;
+    transition: 0.5s ease-in-out all;
+}
+
+.headtext {
+    font-size: 2em;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+header div.cart nav#cartmenu section div#closecartcont span#closecart,
+header div.fill nav#menu span#close {
+    cursor: pointer;
+    position: absolute;
+    z-index: 4;
+    width: 40px;
+    display: none;
+}
+
+header div.fill span#open {
+    display: inline-block;
+    height: 100%;
+    width: 55px;
+    font-size: 7px;
+    box-sizing: border-box;
+    padding: 11px;
+    border-radius: 50%;
+    background-color: blue;
+    transition: 0.3s ease-in-out all;
+    position: relative;
+}
+
+header div.fill span#open label,
+header div.cart span#carticon label {
+    position: absolute;
+    top: 100%;
+    color: aliceblue;
+    left: 0px;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 4px;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+}
+
+header div.fill span#open:hover {
+    background-color: aliceblue;
+}
+
+header div.fill span#open span {
+    display: inline-block;
+    background-color: aliceblue;
+    width: 100%;
+    height: 3px;
+}
+
+header div.fill span#open:hover span {
+    background-color: blue;
+}
+
+header div.fill nav#menu span#close {
+    right: 0px;
+    top: 3px;
+    font-size: 0px;
+}
+
+header div.fill nav#menu span#close,
+header div.cart nav#cartmenu section div#closecartcont span#closecart {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+}
+
+header div.cart nav#cartmenu section div#closecartcont span#closecart {
+    top: 10px;
+    left: 0px;
+}
+
+header div.cart nav#cartmenu section div#closecartcont span#closecart span.one,
+header div.cart nav#cartmenu section div#closecartcont span#closecart span.two,
+header div.fill nav#menu span#close span.one,
+header div.fill nav#menu span#close span.two {
+    background-color: aliceblue;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    box-sizing: border-box;
+}
+
+header div.cart nav#cartmenu section div#closecartcont span#closecart span.one,
+header div.fill nav#menu span#close span.one {
+    z-index: 4;
+    transform: translateY(20px) rotate(45deg);
+    top: 0px;
+    left: 0px;
+}
+
+header div.cart nav#cartmenu section div#closecartcont span#closecart span.two,
+header div.fill nav#menu span#close span.two {
+    z-index: 5;
+    top: 0px;
+    transform: translateY(20px) rotate(-45deg);
+    left: 0px;
+}
+
+header div.fill nav#menu section,
+header div.cart nav#cartmenu section {
+    background-color: rgb(40, 116, 240);
+    height: 100vh;
+    width: 430px;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+span.sidemenu {
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+header div.fill nav#menu section div ul {
+    overflow: hidden;
+    transition: 0.4s ease-in-out all;
+}
+
+header div.fill nav#menu section div ul li {
+    font-size: 1em;
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+    color: rgb(0,0,0);
+    font-weight: 500;
+}
+
+header div.fill nav#menu section div ul li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+header div.fill nav#menu section div ul li:hover {
+    color: rgba(0, 0, 0);
+}
+
+header div.cart nav#cartmenu section {
+    right: 0px;
+    position: absolute;
+    overflow: auto;
+}
+
+header div.cart nav#cartmenu section div,
+header div.fill nav#menu section div {
+    padding: 15px 5px;
+    overflow-x: hidden;
+}
+
+header div.cart nav#cartmenu section div {
+    border: 1px solid black;
+}
+
+header div.cart nav#cartmenu section div.extr {
+    border: none;
+    padding: 0px;
+}
+
+header div.cart nav#cartmenu section div h2 {
+    font-size: 22px;
+}
+
+header div.cart nav#cartmenu section div h4 {
+    font-size: 18px;
+    width: 90%;
+    margin: auto;
+    word-spacing: 3px;
+}
+
+header div.cart nav#cartmenu section div h4 span.price {
+    font-weight: 600;
+}
+
+header div.cart nav#cartmenu section article {
+    margin: 20px 0px;
+    overflow: auto;
+}
+
+header div.cart nav#cartmenu section article div {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: aliceblue;
+    font-size: 1.1em;
+    background-color: rgb(250, 101, 1);
+}
+
+header div.cart nav#cartmenu section div#closecartcont {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+div#search {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    height: 35px;
+}
+
+div#search input {
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid rgb(128, 128, 128);
+    width: 85%;
+    font-size: 25px;
+    height: 100%;
+    padding-left: 3px;
+    box-sizing: border-box;
+    color: rgb(250, 101, 1);
+    background-color: rgb(235, 232, 228);
+}
+
+*:focus {
+    outline: none;
+}
+
+div#search span {
+    width: 14%;
+    border: 2px solid rgb(128, 128, 128);
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    padding: 1px 4px;
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: rgb(137, 161, 162);
+}
+
+div#search span a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+div#search span img {
+    width: 30px;
+    height: 30px;
+}
+
+div#search ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    list-style: none;
+}
+
+div#search ul li {
+    margin: 0px;
+    display: none;
+    border-top: 1px solid rgb(250, 101, 1);
+    border-bottom: 1px solid rgb(250, 101, 1);
+}
+
+div#search ul li::marker {
+    display: none;
+}
+
+::placeholder {
+    font-size: 0.7em;
+    padding-left: 5%;
+    color: rgb(43, 59, 65);
+    opacity: 0.8;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+
+/* Or */
+
+input[type=text]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=text]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+
+/* Chrome */
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+/* or  */
+
+::-webkit-search-decoration,
+::-webkit-search-cancel-button,
+::-webkit-search-results-button,
+::-webkit-search-results-decoration {
+    display: none;
+}
+
+div#search ul li a {
+    padding: 0px 5px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+div#search ul li:hover {
+    background-color: rgb(162, 233, 224);
+}
+
+@media only screen and (max-width:910px) {
+    header div.cart nav#cartmenu section article div {
+        width: 63%;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    div#search {
+        width: 200px;
+    }
+    aside {
+        margin: 50px 0px;
+    }
+    div#search input {
+        border-radius: 10px 0px 0px 10px;
+        width: 77%;
+    }
+    div#search span {
+        width: 20%;
+    }
+    .logo {
+        width: 30%;
+    }
+    #form {
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        width: 100%;
+    }
+    div#search {
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        padding: 5px;
+        z-index: 1;
+        width: 100%;
+        height: 41px;
+        background-color: transparent;
+    }
+    div#search input {
+        width: 90%;
+    }
+    div#search span {
+        width: 10%;
+    }
+    div#search input,
+    div#search input {
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    div#search span img {
+        width: 20px;
+        height: 20px;
+        transform: translateY(18%);
+    }
+    .logo {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    header div.fill nav#menu section,
+    header div.cart nav#cartmenu section {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:410px) {
+    header div.fill nav#menu section,
+    header div.cart nav#cartmenu section {
+        background-color: rgb(40, 116, 240);
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+        white-space: nowrap;
+    }
+    header div.cart nav#cartmenu section div,
+    header div.fill nav#menu section div {
+        font-size: 20px;
+        padding: 13px 5px;
+    }
+    header div.fill nav#menu section div ul li {
+        font-size: 16px;
+        line-height: 1.3em;
+    }
+    header div.cart nav#cartmenu section article div {
+        width: 224px;
+        font-size: 24px;
+    }
+    header div.cart nav#cartmenu section div#closecartcont p {
+        font-size: 20px;
+    }
+    header div.cart span#carticon {
+        width: 37px;
+        height: 37px;
+    }
+    header div.fill span#open {
+        height: 37px;
+        width: 37px;
+        font-size: 4.5px;
+        padding: 8px;
+    }
+    header div.cart span#carticon span#index {
+        font-size: 14px;
+    }
+    header div.fill span#open span {
+        height: 2px;
+    }
+    header div.fill span#open label,
+    header div.cart span#carticon label {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    header {
+        padding: 13px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    header div.cart nav#cartmenu section div,
+    header div.fill nav#menu section div {
+        font-size: 16px;
+        padding: 11px 5px;
+    }
+    header div.cart nav#cartmenu section div h2 {
+        font-size: 19px;
+        white-space: normal;
+    }
+    .logo {
+        width: 40%;
+    }
+    div#search span {
+        width: 13%;
+    }
+    div#search input {
+        width: 87%;
+    }
+}
